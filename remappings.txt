@@ -2,3 +2,4 @@ frax-std/=node_modules/frax-standard-solidity/src/
 forge-std/=node_modules/forge-std/src/
 ds-test/=node_modules/ds-test/src/
 @openzeppelin=node_modules/@openzeppelin
+src/@openzeppelin/contracts-5.4.0=src/@openzeppelin/contracts
