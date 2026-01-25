@@ -11,7 +11,11 @@
     "build": "forge build",
     "size": "forge build --sizes",
     "b": "forge b",
-    "t": "forge t"
+    "t": "forge t",
+    "pk:reinscribe":"zsh reinscribe-pk.zsh --export",
+    "pk:encode":"zsh reinscribe-pk.zsh --encode",
+    "pk:decode":"zsh reinscribe-pk.zsh --decode",
+    "pk:decode:export":"zsh reinscribe-pk.zsh --decode --export"
   },
   "keywords": [],
   "author": "",
