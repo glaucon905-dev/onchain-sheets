@@ -17,12 +17,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@openzeppelin/contracts": "^4.8.0",
+    "@openzeppelin/contracts": "5.6.1",
+    "@openzeppelin/contracts-upgradeable": "5.6.1",
     "@uniswap/v3-core": "1.0.0",
     "@uniswap/v3-periphery": "1.4.4",
     "ds-test": "github:dapphub/ds-test",
-    "forge-std": "github:foundry-rs/forge-std#e8a047e3f40f13fa37af6fe14e6e06283d9a060e",
-    "frax-standard-solidity": "github:FraxFinance/frax-standard-solidity",
+    "forge-std": "github:foundry-rs/forge-std#77041d2ce690e692d6e03cc812b57d1ddaa4d505",
+    "frax-standard-solidity": "github:FraxFinance/frax-standard-solidity#4603eb28fc17a38dc097ead3d632b6e5ea14e932",
     "prettier": "3.5.3",
     "prettier-plugin-svelte": "3.3.3",
     "prettier-plugin-solidity": "2.0.0"
