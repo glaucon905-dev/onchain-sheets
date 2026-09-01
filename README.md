@@ -1,5 +1,3 @@
-[![Node.js CI](https://github.com/glaucon905-dev/onchain-sheets/actions/workflows/test.yml/badge.svg)](https://github.com/glaucon905-dev/onchain-sheets/actions/workflows/test.yml)
-
 # 📊 onchain-sheets 📊
 
 Excel in Solidity. A `Sheet` contract where every cell holds either a literal `int256` or a formula
@@ -19,9 +17,18 @@ pnpm lint:check # prettier check
 pnpm lint:fix-all
 ```
 
-> Note: a `pnpm-workspace.yaml` with an `onlyBuiltDependencies` entry for `frax-standard-solidity`
-> was added because pnpm 10+ refuses to run build scripts for git-hosted packages without an explicit
-> allowlist. Without it `pnpm i` fails on the template as-is.
+Two changes to the template's tooling were needed to get a green local run:
+
+- A `pnpm-workspace.yaml` with an `onlyBuiltDependencies` entry for `frax-standard-solidity`. pnpm
+  10+ refuses to run build scripts for git-hosted packages without an explicit allowlist, so
+  `pnpm i` fails on the template as-is.
+- The CI workflow's pnpm pin moved from `8.11.0` to `10.28.2`. The committed `pnpm-lock.yaml` is
+  already `lockfileVersion: '9.0'`, which pnpm 8 cannot read.
+
+The template's CI badge has been removed rather than left pointing at a workflow that has never run:
+GitHub disables Actions on newly forked repositories until the owner re-enables them in the web UI,
+and that toggle is not reachable over the API. Everything below was verified locally instead
+(`forge build`, `forge test`, `pnpm lint:check`).
 
 ---
 
